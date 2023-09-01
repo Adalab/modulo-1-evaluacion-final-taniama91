@@ -1,0 +1,60 @@
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    width: auto;      
+    height: auto;
+    &__span{
+        text-transform: uppercase;
+        font-family: $roboto;
+        font-size: 1.4rem;
+        color: $moss-green;
+        text-align: left;
+        width: 260px;
+        height: 30px;
+        padding-left: 13px;
+        line-height: 2;
+    }
+    &__h3{
+        padding-left: 13px;
+        text-transform: uppercase;
+        font-family: $robotoslab;
+        font-size: 2.2rem;
+        line-height: 1.36;
+    }
+    &__article{
+        width: 290px;
+        height: 181px;
+        font-size: 1.8rem;
+        font-family: $roboto;
+        color: $greyish-brown;
+        text-align: left;
+        margin: 10px 0 42px;
+        padding-left: 13px;
+        line-height: 1.67;
+    }
+    &__nav{
+        width: 160px;
+        height: 45px;
+        border: solid 2px $moss-green;
+        border-radius: 22.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+        &-buy{
+            width: 137px;
+            height: 45px;
+            text-decoration: none;
+            font-size: 2rem;
+            font-family: $roboto;
+            line-height: 2.25;
+            color: $moss-green;
+            font-weight: 500;   
+            margin: 10px 11.4px 0 11.4px;         
+        }
+   }
+}
+

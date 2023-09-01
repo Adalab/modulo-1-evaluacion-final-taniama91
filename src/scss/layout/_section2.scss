@@ -1,0 +1,71 @@
+.section2{
+    background-color: $light-grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'img1''img2' 'img3''startt';
+    justify-items: center;
+    &__span{
+        width: 297px;
+        height: 22.1px;
+        font-family: $robotoslab;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-left: 12px;
+        text-align: center;
+
+    }
+    &__h3{
+        font-family: $robotoslab;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__div{
+        justify-self: center;
+        align-self: center;
+       
+        &-p{
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: $robotoslab;
+            line-height: 2.4;
+            text-align: center;
+            
+        }
+    
+        &-img1{
+        width: 114px;
+        grid-area: img1;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        }
+        &-img2{
+        width: 114px;
+        grid-area: img2;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        }
+        &-img3{
+        width: 114px;
+        grid-area: img3;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        }
+    }
+    &__start{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: startt;
+        border-radius: 22.5px;
+        text-decoration: none;
+        font-size: 2rem;
+        font-family: $roboto;
+        background-color: $moss-green;
+        color: $white;
+        width: 150px;
+        height: 47.3px;
+    }
+}
