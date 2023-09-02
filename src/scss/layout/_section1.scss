@@ -1,4 +1,6 @@
 .section1{
+    width: 320px;
+    height: 376px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;  
@@ -14,6 +16,7 @@
         height: 30px;
         padding-left: 13px;
         line-height: 2;
+        margin-top: 30px;
     }
     &__h3{
         padding-left: 13px;
@@ -42,7 +45,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        margin: 0 0 20px 15px;
         
         &-buy{
             width: 137px;
@@ -52,9 +55,11 @@
             font-family: $roboto;
             line-height: 2.25;
             color: $moss-green;
-            font-weight: 500;   
-            margin: 10px 11.4px 0 11.4px;         
-        }
+            font-weight: 500;  
+            margin-left: 50px; 
+            
+
+     }
    }
 }
 
