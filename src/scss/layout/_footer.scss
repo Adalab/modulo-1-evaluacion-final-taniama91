@@ -6,6 +6,11 @@
     background-color: $greyish-brown;
     width: 320px;
     height: 433px;
+    @media (min-width: 768px){
+        width: 768px;
+        height: 240px;
+        flex-direction: row-reverse; 
+    }
     &__nav1{
         display: flex;
         background-color: $white;
@@ -15,13 +20,13 @@
         transform: translateY(-50%);
         position: relative;
         align-items: center;
-        justify-content: center;
+        justify-content: center;           
+    }
         &-up{
             width: 20px;
-            height: 24px;
-             
+            height: 24px;  
         }
-    }
+
     &__nav2{
         font-family: $roboto;
         font-size: 1.6rem;
@@ -29,6 +34,10 @@
         text-transform: uppercase;
         color: $white;
         text-align: center;
+        @media (min-width: 768px){
+            display: flex;
+            flex-direction: row;
+        }
        
         &-menu1{
             list-style: none;
@@ -43,87 +52,30 @@
         }
        }
     &__copy{
+        display:flex;
         color: $white;
         margin: 29.8px 110px 0px 109px;
         font-size: 1.4rem;
         font-family: $roboto;
+        @media (min-width: 768px){
+            flex-direction: column;
+        }
     }
     &__love{
+        width: 298.2px;
+        height: 29.8px;
        display: flex;
        font-family: $roboto;
         font-size: 1.4rem;
         color: $white;
         line-height: 2.14;
         text-align: center;
-     
-            &-2{
-                color: $moss-green;
-                padding: 0 5px 0 5px;
-            }
+        justify-content: center;
+        
+        &-2{
+            color: $moss-green;
+            padding: 0 5px 0 5px;
+        }
         
     }
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $greyish-brown;
-        width: 320px;
-        height: 433px;
-        &__nav1{
-            display: flex;
-            background-color: $white;
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
-            transform: translateY(-50%);
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            &-up{
-                width: 20px;
-                height: 24px;
-                 
-            }
-        }
-        &__nav2{
-            font-family: $roboto;
-            font-size: 1.6rem;
-            list-style: 1.88;
-            text-transform: uppercase;
-            color: $white;
-            text-align: center;
-           
-            &-menu1{
-                list-style: none;
-                margin: 0 96.6px 27.9px 97.7px;
-                line-height: 1.88;
-                            
-            }
-            &-menu2{
-                list-style: none;
-                margin: 27.9px 102.8px 29.8px 102.8px;
-                line-height: 1.88;
-            }
-           }
-        &__copy{
-            color: $white;
-            margin: 29.8px 110px 0px 109px;
-            font-size: 1.4rem;
-            font-family: $roboto;
-        }
-        &__love{
-           display: flex;
-           font-family: $roboto;
-            font-size: 1.4rem;
-            color: $white;
-            line-height: 2.14;
-            text-align: center;
-         
-                &-2{
-                    color: $moss-green;
-                    padding: 0 5px 0 5px;
-                }
-            
-        }
-    }
-}    
+}

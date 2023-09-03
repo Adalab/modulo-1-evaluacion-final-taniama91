@@ -2,72 +2,135 @@
     background-color: $light-grey;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 'img1''img2' 'img3''startt';
     justify-items: center;
-    &__span{
-        width: 297px;
-        height: 22.1px;
-        font-family: $robotoslab;
-        font-weight: bold;
-        font-size: 1.2rem;
-        padding-left: 12px;
-        text-align: center;
-        margin-top: 15px;
+    @media (min-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'spann spann spann''h3 h3 h3''div1 div2 div3''startt startt startt';
+    }
+    
 
+    &__span{
+    font-family: $roboto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: center;
+    color: $brownish-grey;
+    width: 290px;
+    height: 31.5px;
+    @media (min-width: 768px){
+        grid-area: spann;
+    }
     }
     &__h3{
-        font-family: $robotoslab;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2rem;
+     font-family: $robotoslab;   
+     font-size: 2rem;
+     font-weight: bold;
+     line-height: 1.5;
+     color: black;
+     text-align: center;
+     margin: 17px 6px 11.4px 4px;
+     @media (min-width: 768px){
+        grid-area: h3;
+    
+     }
     }
-    &__div{
+    &__div1{
         justify-self: center;
         align-self: center;
-       
+        font-family: $robotoslab;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.14;
+        @media (min-width: 768px){
+            grid-area: div1;
+            font-size: 1.8rem;
+            line-height: 1.67;
+
+        }
+        &-img1{
+            width: 114px;
+            border-radius: 50%;
+            box-shadow: $shadow;
+            
+        }
+    
         &-p{
             font-size: 1.4rem;
             font-weight: bold;
             font-family: $robotoslab;
             line-height: 2.4;
             text-align: center;
-            
-        }
-    
-        &-img1{
-        width: 114px;
-        grid-area: img1;
-        border-radius: 50%;
-        box-shadow: $shadow;
+         }
+    }
+    &__div2{
+        justify-self: center;
+        align-self: center;
+        font-family: $robotoslab;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.14;
+        @media (min-width: 768px){
+            grid-area: div2;
+            font-size: 1.8rem;
+            line-height: 1.67;
         }
         &-img2{
-        width: 114px;
-        grid-area: img2;
-        border-radius: 50%;
-        box-shadow: $shadow;
+            width: 114px;
+            border-radius: 50%;
+            box-shadow: $shadow;
+            }
+        }
+        &-p{
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: $robotoslab;
+            line-height: 2.4;
+            text-align: center;
+        }
+
+    &__div3{
+        justify-self: center;
+        align-self: center;
+        font-family: $robotoslab;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.14;
+        @media (min-width: 768px){
+            grid-area: div3;
+            font-size: 1.8rem;
+            line-height: 1.67;
         }
         &-img3{
-        width: 114px;
-        grid-area: img3;
-        border-radius: 50%;
-        box-shadow: $shadow;
+            width: 114px;
+            border-radius: 50%;
+            box-shadow: $shadow;
+        
+        }
+        &-p{
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: $robotoslab;
+            line-height: 2.4;
+            text-align: center;
         }
     }
-    &__start{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+   &__start{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22.5px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: $roboto;
+    background-color: $moss-green;
+    color: $white;
+    width: 150px;
+    height: 47.3px;
+    margin-bottom: 30px;
+    @media (min-width: 768px){
         grid-area: startt;
-        border-radius: 22.5px;
-        text-decoration: none;
-        font-size: 2rem;
-        font-family: $roboto;
-        background-color: $moss-green;
-        color: $white;
-        width: 150px;
-        height: 47.3px;
-        margin-bottom: 30px;
     }
+   }
 }
