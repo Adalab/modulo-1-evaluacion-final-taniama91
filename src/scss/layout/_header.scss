@@ -9,14 +9,14 @@
     background-repeat: no-repeat;
     position: sticky;
     color: $white;
-    position: fixed;
-    top: 0;
 
     &__nav1-menu{
         background-color: $moss-green;
         padding: 10px;
         width: 36.4px;
         height: 36.8px;
+        position: fixed;
+    	top: 0;
     }
     &__div{
         display: flex;
@@ -32,13 +32,22 @@
         margin-top: 420px;
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
         font-weight: bold;
+        @media (min-width:768px){
+            font-size: 7.5rem;
+            font-weight: bold;
+            line-height: 1.33;
+            margin-top: 580px;
+        }
         }
         &-p{
             font-size: 1.6rem;
             font-family: $roboto;
             line-height: 1.19;
             margin: 51px 38px 34px 34px;
-
+            @media (min-width:768px){
+                font-size: 2.4rem;
+                margin: 50px 183.1px 0 165.2px;
+            }
         }
     }
     &__nav2{
@@ -52,5 +61,8 @@
         position: relative;
         top: 10%;
         left:45%;
+        @media (min-width:768px){
+            margin: 0 50px 0 50px;
+        }
     }
 }
