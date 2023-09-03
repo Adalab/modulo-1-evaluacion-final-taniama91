@@ -20,6 +20,7 @@
     height: 31.5px;
     @media (min-width: 768px){
         grid-area: spann;
+        padding-top: 20px;
     }
     }
     &__h3{
@@ -30,8 +31,10 @@
      color: black;
      text-align: center;
      margin: 17px 6px 11.4px 4px;
+     text-transform: uppercase;
      @media (min-width: 768px){
         grid-area: h3;
+        font-size: 2.8rem;
     
      }
     }
@@ -131,6 +134,8 @@
     margin-bottom: 30px;
     @media (min-width: 768px){
         grid-area: startt;
+        padding:5px;
+        width: 184px;
     }
    }
 }
