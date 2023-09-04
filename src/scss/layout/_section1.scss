@@ -8,8 +8,13 @@
     height: auto; 
     @media (min-width:768px){
         width: 768px;
-        height: 333px;
-    }
+        height: 333px;}
+    @media (min-width: 1280px){
+        width: 1280px;
+        height: 330px;
+        
+        }
+    
     &__span{
         text-transform: uppercase;
         font-family: $roboto;
@@ -27,7 +32,11 @@
             width: 333px;
             margin-left: 37px;
         }
+        @media (min-width: 1280px){
+                margin-left: 170px;
         }
+        }
+        
     &__h3{
         margin-left: 13px;
         text-transform: uppercase;
@@ -45,7 +54,13 @@
             line-height: 1.41;
             margin-left: 37px;
         }
+        @media (min-width: 1280px){
+            width: 1110.5px;
+            height: 45px;
+            margin-left: 170px;
+        }
     }
+    
     &__article{
         width: 290px;
         height: 181px;
@@ -63,7 +78,13 @@
             line-height: 1.5;
             margin-left: 37px;
         }
+        @media (min-width: 1280px){
+            width: 942px;
+            height: 60px;
+            margin-left: 170px;
+        }
     }
+    
     &__nav{
         width: 160px;
         height: 45px;
@@ -77,6 +98,11 @@
         @media (min-width: 768px){
             margin-left: 37px;
         }
+        @media (min-width: 1280px) {
+            width: 159.9px;
+            height: 45px;
+            margin: 0 244px 10px 172.8px;
+        }
         
         &-buy{
             width: 137px;
@@ -87,7 +113,8 @@
             line-height: 2.25;
             color: $moss-green;
             font-weight: 500;  
-            margin-left: 50px;     
+            margin-left: 50px;   
+              
         }
    }
 }

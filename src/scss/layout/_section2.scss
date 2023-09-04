@@ -7,7 +7,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 'spann spann spann''h3 h3 h3''div1 div2 div3''startt startt startt';
     }
-    
+    @media (min-width: 1280px){
+        padding: 0 174px 0 172px;
+    }
 
     &__span{
     font-family: $roboto;
